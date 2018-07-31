@@ -1,0 +1,24 @@
+#!/bin/sh
+# chkconfig: 2345 90 60
+#
+### END OF INIT
+
+export ES_HOME="/usr/local/activemq"
+
+case $1 in
+start)
+cd /usr/local/activemq/bin/
+./activemq start
+;;
+stop)
+cd /usr/local/activemq/bin/
+./activemq stop
+;;
+restart)
+cd /usr/local/activemq/bin/
+./activemq stop
+cd /usr/local/activemq/bin/
+./activemq start
+;;
+esac
+exit 0
