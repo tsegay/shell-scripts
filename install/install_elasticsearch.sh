@@ -15,7 +15,7 @@ wget https://download.elastic.co/elasticsearch/release/org/elasticsearch/distrib
 
 tar xvf elasticsearch-2.3.2.tar.gz
 
-cp -r ~/elasticsearch-2.3.2 /usr/local
+cp -r elasticsearch-2.3.2 /usr/local
 
 cd /usr/local
 

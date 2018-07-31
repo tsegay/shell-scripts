@@ -15,7 +15,7 @@ wget https://archive.apache.org/dist/activemq/5.15.0/apache-activemq-5.15.0-bin.
 
 tar xvf apache-activemq-5.15.0-bin.tar.gz
 
-cp -r ~/apache-activemq-5.15.0 /usr/local
+cp -r apache-activemq-5.15.0 /usr/local
 
 cd /usr/local
 
