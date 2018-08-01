@@ -32,11 +32,11 @@ git clone --single-branch --branch dev https://github.com/US-CBP/GTAS.git $GTAS_
 ./install_mariadb.sh
 
 # add mvn install
-cd $GTAS_DEV/GTAS/gtas-parent
+cd $GTAS_DEV/gtas-parent
 mvn clean install -Dskip.unit.tests=true
 # run GTAS database script
 ## add createDatabaseIfNotExist=true to the mysql connection string
-cd $GTAS_DEV/GTAS/gtas-parent/gtas-commons/
+cd $GTAS_DEV/gtas-parent/gtas-commons/
 mvn hibernate4:export
 
 # Install Elastic Search
