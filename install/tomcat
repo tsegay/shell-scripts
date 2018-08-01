@@ -1,0 +1,25 @@
+#!/bin/sh
+# chkconfig: 2345 90 60
+#
+### END OF INIT
+
+export CATALINA_HOME="/usr/local/tomcat"
+export CATELINA_BASE="/usr/local/tomcat"
+
+case $1 in
+start)
+cd /usr/local/tomcat/bin/
+./startup.sh
+;;
+stop)
+cd /usr/local/tomcat/bin/
+./shutdown.sh
+;;
+restart)
+cd /usr/local/tomcat/bin/
+./shutdown.sh
+cd /usr/local/tomcat/bin/
+./startup.sh
+;;
+esac
+exit 0
