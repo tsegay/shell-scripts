@@ -20,7 +20,7 @@ yum install wget -y
 ./install_tomcat.sh
 
 ### Install Git (run it as a non-root user that has sudo privilages)
-sudo yum install Git
+# sudo yum install Git
 
 # Checkout GTAS dev branch from github repository
 git clone --single-branch --branch dev https://github.com/US-CBP/GTAS.git $GTAS_DEV/
