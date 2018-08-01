@@ -13,7 +13,8 @@ mkdir $GTAS_DEV
 
 ### Install Java-8
 
-yum install java -1.8.0-openjdk* -y
+yum install java-1.8.0-openjdk* -y
+yum install wget -y
 
 # Install Tomcat
 ./install_gtas.sh
