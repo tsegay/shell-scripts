@@ -17,7 +17,7 @@ yum install java-1.8.0-openjdk* -y
 yum install wget -y
 
 # Install Tomcat
-./install_gtas.sh
+./install_tomcat.sh
 
 ### Install Git (run it as a non-root user that has sudo privilages)
 sudo yum install Git
