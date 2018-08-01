@@ -1,6 +1,5 @@
-#cp tomcat /etc/init.d/
-#ln -s /etc/init.d/tomcat /etc/rc2.d/S90tomcat
-#/etc/init.d/tomcat start
+cp tomcat /etc/init.d/
+ln -s /etc/init.d/tomcat /etc/rc2.d/S90tomcat
 
 cp redis /etc/init.d/
 ln -s /etc/init.d/redis /etc/rc2.d/S90redis

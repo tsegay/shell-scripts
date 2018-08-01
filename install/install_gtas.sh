@@ -31,6 +31,9 @@ git clone --single-branch --branch dev https://github.com/US-CBP/GTAS.git $GTAS_
 # Install mariadb
 ./install_mariadb.sh
 
+# Install Redis
+./install_redis.sh
+
 # add mvn install
 cd $GTAS_DEV/gtas-parent
 mvn clean install -Dskip.unit.tests=true

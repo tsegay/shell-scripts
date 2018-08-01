@@ -18,8 +18,12 @@ tar xzf redis-4.0.10.tar.gz
 
 cp -r redis-4.0.10 /usr/local
 
-cd /usr/local/redis-4.0.10
+ln -s /usr/local/redis-4.0.10 /usr/local/redis
+
+cd /usr/local/redis
+
+yum install gcc
 
 make
 
-./src/redis-server
+# ./src/redis-server
