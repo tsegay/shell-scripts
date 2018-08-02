@@ -27,4 +27,4 @@ passwd gtas
 
 usermod -aG wheel gtas
 
-chown -R gtas:gtas /usr/local/elasticsearch
+chown -R gtas:gtas /usr/local/elasticsearch/*
