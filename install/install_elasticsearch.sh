@@ -22,4 +22,9 @@ cd /usr/local
 # Soft link elasticsearch -> elasticsearch-2.3.2, this way when the elasticsearch version is updated, we would only need to update the tomcat link
 ln -s elasticsearch-2.3.2 elasticsearch
 
+useradd gtas
+passwd gtas
+
+usermod -aG wheel gtas
+
 chown -R gtas:gtas /usr/local/elasticsearch
