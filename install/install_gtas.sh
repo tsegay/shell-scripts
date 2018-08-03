@@ -27,8 +27,6 @@ yum install wget -y
 ### Install Git (run it as a non-root user that has sudo privilages)
 # sudo yum install Git
 
-# Checkout GTAS dev branch from github repository
-sudo -u gtas git clone --single-branch --branch dev https://github.com/US-CBP/GTAS.git $GTAS_DEV/
 
 # Install Maven
 ./install_maven.sh
