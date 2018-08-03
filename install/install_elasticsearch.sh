@@ -13,9 +13,7 @@ export ES_HOME="/home/gtas/elasticsearch"
 # Download Elasticsearch v2.3.2
 wget https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/tar/elasticsearch/2.3.2/elasticsearch-2.3.2.tar.gz
 
-sudo -u gtas tar xvf elasticsearch-2.3.2.tar.gz
-
-cp -r elasticsearch-2.3.2 /home/gtas/
+sudo -u gtas tar xvf elasticsearch-2.3.2.tar.gz -C /home/gtas/
 
 cd /home/gtas/
 

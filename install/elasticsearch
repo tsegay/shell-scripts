@@ -3,22 +3,22 @@
 #
 ### END OF INIT
 
-export ES_HOME="/usr/local/elasticsearch"
+export ES_HOME="/home/gtas/elasticsearch"
 
 case $1 in
 start)
-cd /usr/local/elasticsearch/bin/
-./elasticsearch -d -p pid
+cd $ES_HOME/bin/
+sudo -u gtas ./elasticsearch -d -p pid
 ;;
 stop)
-cd /usr/local/elasticsearch/bin/
+cd $ES_HOME/bin/
 kill `cat pid`
 ;;
 restart)
-cd /usr/local/elasticsearch/bin/
+cd $ES_HOME/bin/
 kill `cat pid`
-cd /usr/local/elasticsearch/bin/
-./elasticsearch -d -p pid
+cd $ES_HOME/bin/
+sudo -u gtas ./elasticsearch -d -p pid
 ;;
 esac
 exit 0
