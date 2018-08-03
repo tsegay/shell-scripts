@@ -10,15 +10,10 @@
 # Set environment variable to elastic search 
 export ES_HOME="/home/gtas/elasticsearch"
 
-useradd gtas
-passwd gtas
-
-usermod -aG wheel gtas
-
 # Download Elasticsearch v2.3.2
 wget https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/tar/elasticsearch/2.3.2/elasticsearch-2.3.2.tar.gz
 
-tar xvf elasticsearch-2.3.2.tar.gz
+sudo -u gtas tar xvf elasticsearch-2.3.2.tar.gz
 
 cp -r elasticsearch-2.3.2 /home/gtas/
 

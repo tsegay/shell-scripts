@@ -7,9 +7,14 @@
 #
 #
 
-GTAS_DEV=~/repository
+useradd gtas
+passwd gtas
 
-mkdir $GTAS_DEV
+usermod -aG wheel gtas
+
+GTAS_DEV=/home/gtas/repository
+
+sudo -u gtas mkdir $GTAS_DEV
 
 ### Install Java-8
 
@@ -23,7 +28,7 @@ yum install wget -y
 # sudo yum install Git
 
 # Checkout GTAS dev branch from github repository
-git clone --single-branch --branch dev https://github.com/US-CBP/GTAS.git $GTAS_DEV/
+sudo -u gtas git clone --single-branch --branch dev https://github.com/US-CBP/GTAS.git $GTAS_DEV/
 
 # Install Maven
 ./install_maven.sh
@@ -34,13 +39,8 @@ git clone --single-branch --branch dev https://github.com/US-CBP/GTAS.git $GTAS_
 # Install Redis
 ./install_redis.sh
 
-# add mvn install
-cd $GTAS_DEV/gtas-parent
-mvn clean install -Dskip.unit.tests=true
-# run GTAS database script
-## add createDatabaseIfNotExist=true to the mysql connection string
-cd $GTAS_DEV/gtas-parent/gtas-commons/
-mvn hibernate4:export
+#Install Node and Bower
+./install_node_bower.sh
 
 # Install Elastic Search
 ./install_elasticsearch.sh
