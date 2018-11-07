@@ -10,7 +10,7 @@
 ### Install Tomcat 8
 
 # Download Tomcat 8
-    wget http://us.mirrors.quenda.co/apache/tomcat/tomcat-8/v8.5.32/bin/apache-tomcat-8.5.32.tar.gz
+    wget http://us.mirrors.quenda.co/apache/tomcat/tomcat-8/v8.5.32/bin/apache-tomcat-8.5.34.tar.gz
 
 # upzip the taz
     tar xvf apache-tomcat-8.5.32.tar.gz
