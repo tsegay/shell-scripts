@@ -22,7 +22,7 @@ ln -s /usr/local/redis-4.0.10 /usr/local/redis
 
 cd /usr/local/redis
 
-yum install gcc
+yum install gcc -y
 
 make
 
