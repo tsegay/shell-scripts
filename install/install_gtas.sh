@@ -40,8 +40,5 @@ yum install wget -y
 #Install Node and Bower
 ./install_node_bower.sh
 
-# Install Elastic Search
-./install_elasticsearch.sh
-
 #Install Active MQ
 ./install_activemq.sh
