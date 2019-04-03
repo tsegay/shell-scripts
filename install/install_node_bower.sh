@@ -1,8 +1,8 @@
 #!/bin/sh
 
 yum update
-yum install yum-utils bzip2 bzip2-devel wget curl tar
-yum groupinstall "Development Tools"
+yum install -y yum-utils bzip2 bzip2-devel wget curl tar
+yum groupinstall -y "Development Tools"
 
 cd /opt/
 
