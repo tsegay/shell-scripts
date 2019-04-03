@@ -7,10 +7,10 @@
 #
 #
 
-useradd gtas
-passwd gtas
+# useradd gtas
+# passwd gtas
 
-usermod -aG wheel gtas
+# usermod -aG wheel gtas
 
 GTAS_DEV=/home/gtas/repository
 
