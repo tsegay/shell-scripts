@@ -6,7 +6,7 @@
 ######################################
 #
 #
-TOMCAT_VERSION=v8.5.40
+TOMCAT_VERSION=8.5.40
 ### Install Tomcat 8 ${TOMCAT_VERSION}
 
 # Download Tomcat 8
