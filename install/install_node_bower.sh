@@ -6,10 +6,12 @@ yum groupinstall -y "Development Tools"
 
 cd /opt/
 
-wget http://nodejs.org/dist/v5.9.1/node-v5.9.1.tar.gz
-tar zxf node-v5.9.1.tar.gz
+NODE_VERSION=8.1.1
 
-cd node-v5.9.1
+wget http://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}.tar.gz
+tar zxf node-v${NODE_VERSION}.tar.gz
+
+cd node-v${NODE_VERSION}
 
 ./configure --prefix=/usr/local
 
