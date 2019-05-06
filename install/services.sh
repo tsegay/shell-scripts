@@ -7,6 +7,10 @@ ln -s /etc/init.d/redis /etc/rc2.d/S90redis
 cp activemq /etc/init.d/
 ln -s /etc/init.d/activemq /etc/rc2.d/S90activemq
 
-cp elasticsearch /etc/init.d/
-ln -s /etc/init.d/elasticsearch /etc/rc2.d/S90elasticsearch
+chkconfig tomcat on
+chkconfig redis on
+chkconfig activemq on
 
+sudo systemctl start tomcat
+sudo systemctl start redis
+sudo systemctl start activemq
