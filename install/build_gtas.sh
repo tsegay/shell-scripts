@@ -3,7 +3,8 @@ GTAS_DEV=/home/$(whoami)/repository
 
 # Checkout GTAS dev branch from github repository
 sudo -u $(whoami) git clone --single-branch --branch dev https://github.com/US-CBP/GTAS.git $GTAS_DEV/temp
-sudo cp $GTAS_DEV/temp $GTAS_DEV/
+
+mv $GTAS_DEV/temp $GTAS_DEV/
 
 # add mvn install
 cd $GTAS_DEV/gtas-parent
