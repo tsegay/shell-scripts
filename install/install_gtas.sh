@@ -12,9 +12,9 @@
 
 # usermod -aG wheel gtas
 
-GTAS_DEV=/home/gtas/repository
+GTAS_DEV=/home/$(whoami)/repository
 
-sudo -u gtas mkdir $GTAS_DEV
+sudo -u $(whoami) mkdir $GTAS_DEV
 
 ### Install Java-8
 
