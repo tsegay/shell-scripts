@@ -23,4 +23,4 @@ systemctl status mysql
 
 # Secure Mariadb 
 
-# mysql_secure_installation
+mysql_secure_installation
