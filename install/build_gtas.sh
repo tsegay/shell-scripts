@@ -4,7 +4,7 @@ GTAS_DEV=/home/$(whoami)/repository
 # Checkout GTAS dev branch from github repository
 git clone --single-branch --branch dev https://github.com/US-CBP/GTAS.git $GTAS_DEV/temp
 
-cp $GTAS_DEV/temp/* $GTAS_DEV
+cp -Rf $GTAS_DEV/temp/* $GTAS_DEV
 
 rm -rf $GTAS_DEV/temp
 
