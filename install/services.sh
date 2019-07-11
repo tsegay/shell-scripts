@@ -11,6 +11,6 @@ chkconfig tomcat on
 chkconfig redis on
 chkconfig activemq on
 
-sudo systemctl start tomcat
-sudo systemctl start redis
-sudo systemctl start activemq
+systemctl start tomcat
+systemctl start redis
+systemctl start activemq
