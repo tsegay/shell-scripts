@@ -14,7 +14,7 @@
 
 GTAS_DEV=/home/$(whoami)/repository
 
-sudo -u $(whoami) mkdir $GTAS_DEV
+mkdir $GTAS_DEV
 
 ### Install Java-8
 
