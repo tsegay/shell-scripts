@@ -18,7 +18,7 @@ yum install MariaDB-server MariaDB-client -y
 # Check installation 
         
 systemctl start mysql
-sudo /sbin/chkconfig mysql on
+/sbin/chkconfig mysql on
 systemctl status mysql
 
 # Secure Mariadb 
